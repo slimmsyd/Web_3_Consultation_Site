@@ -68,7 +68,7 @@ export default function HomePage() {
         <div className="overlayDark absolute"></div>
         <div className="absolute video-bg">
           <Video
-            src="http://localhost:3000/ether.mp4"
+            src="https://web-3-consultation-site-xl7a.vercel.app/ether.mp4"
             type="video/mp4"
             width="100%"
             height="100vh"

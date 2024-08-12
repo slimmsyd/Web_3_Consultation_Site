@@ -223,10 +223,12 @@ export default function CryptoComponent({
                     </span>
                     <p className="text-[14px] text-[#b4b4b4] ">
                       {" "}
-                      Blockchain is a digital ledger technology that securely
-                      records transactions across a network of computers. Each
-                      transaction is added to a chain of blocks, creating an
-                      unchangeable and transparent record.
+                      You will gain a comprehensive overview of blockchain,
+                      cryptocurrency, and decentralized finance (DeFi). You'll
+                      understand how blockchain technology creates secure,
+                      transparent records, how cryptocurrencies function as
+                      digital money, and how DeFi is revolutionizing financial
+                      services by providing open access to everyone.
                     </p>
                   </div>
 
@@ -236,22 +238,28 @@ export default function CryptoComponent({
                     </span>
                     <p className="text-[14px] text-[#b4b4b4] ">
                       {" "}
-                      Blockchain is a digital ledger technology that securely
-                      records transactions across a network of computers. Each
-                      transaction is added to a chain of blocks, creating an
-                      unchangeable and transparent record.
+                      Understanding these technologies is crucial for staying
+                      ahead in the digital age. For minority communities, this
+                      knowledge empowers you to access new financial
+                      opportunities, ensure your data privacy, and participate
+                      in a global economy that's increasingly decentralized and
+                      inclusive.
                     </p>
                   </div>
                 </div>
               </div>
 
               <div className="flex flex-col gap-[5px] text-div text-center md:text-left">
-                <h2>Future is here, it is your right to take control of it.</h2>
+                <h2>
+                  Future is here, it is your rsight to take control of it.
+                </h2>
                 <p className="text-[14px] text-[#b4b4b4] ">
-                  Blockchain is a digital ledger technology that securely
-                  records transactions across a network of computers. Each
-                  transaction is added to a chain of blocks, creating an
-                  unchangeable and transparent record.
+                  Staying ahead of financial trends is key to protecting your
+                  future. By understanding and leveraging blockchain and
+                  cryptocurrency, you’ll position yourself to take advantage of
+                  emerging opportunities, safeguard your wealth, and be part of
+                  a financial system that’s designed to be more equitable and
+                  inclusive for all.
                 </p>
 
                 <Link className="mt-[20px] text-[#6042F3]" href="/">
@@ -303,10 +311,10 @@ export default function CryptoComponent({
                   </span>
                   <p className="text-[14px] text-[#b4b4b4] ">
                     {" "}
-                    Blockchain is a digital ledger technology that securely
-                    records transactions across a network of computers. Each
-                    transaction is added to a chain of blocks, creating an
-                    unchangeable and transparent record.
+                    Empower yourself with a technology that safeguards your
+                    tomorrow. Blockchain is a secure digital ledger that records
+                    every transaction transparently and immutably, ensuring your
+                    data and assets are protected for the long haul."
                   </p>
                 </div>
               </div>

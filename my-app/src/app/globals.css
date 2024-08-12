@@ -241,19 +241,50 @@ p {
   border-right: 0.5px solid #b4b4b4;
   border-left: 0.5px solid #b4b4b4;
 }
+.social-container-image { 
+  width: 50px;
+  height: 50px;
+}
 .testimonal-container{
   display: flex;
   flex-direction: column;
   gap: 25px;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   flex: 1;
   position: relative;
   overflow: hidden;
+}
+.svg-rotate{
+  transform: rotate(180deg);
+  align-self: flex-end;
 }
 .testimonal-header {
   grid-column: 2;
   border-right: 0.5px solid #b4b4b4;
   border-left: 0.5px solid #b4b4b4;
+}
+
+
+.move-back , .move-forward{ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #6042F3;
+}
+.move-back:hover, .move-forward:hover{
+  background: #6042f392;
+
+}
+.quote-container{
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 800px)
+{ 
+  .quote-container{
+    padding: 0px 10px;
+
+  }
 }
 
 .site-container {

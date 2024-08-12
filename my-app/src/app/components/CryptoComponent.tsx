@@ -46,9 +46,13 @@ export default function CryptoComponent({
                 </p>
               </div>
 
-              <div className="flex lg:flex-row flex-col gap-[20px] mt-[100px]">
+              <div className="flex lg:flex-row flex-col justify-between gap-[20px] mt-[100px]">
                 <div className="flex flex-col gap-[10px] image-wrapper">
-                  <div className="image-container">
+                  <Link
+                    href="https://decrypt.co/243622/trump-sons-tease-huge-crypto-announcement"
+                    className="image-container"
+                    target="_blank"
+                  >
                     <Image
                       alt="Image Banner"
                       src={ImageOne}
@@ -58,19 +62,25 @@ export default function CryptoComponent({
                       objectFit="cover" // Ensures the image covers the container without distortion
                       quality={100}
                     />
+                  </Link>
+
+                  <div className="h-[80px]">
+                    <h3>Trump Sons Tease "Crypto"</h3>
                   </div>
 
-                  <h3>Trump Buys BTC</h3>
-
                   <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been d more recently
-                    with desktop publishing software like Aldus PageMaker
-                    including versions of Lorem Ipsum.
+                    Eric and Donald Trump Jr. say they've fallen in love with
+                    crypto and DeFi and have something "huge" in the works. What
+                    is it? Adrian Zmudzinski
                   </p>
                 </div>
-                <div className="flex flex-col gap-[10px] image-wrapper">
-                  <div className="image-container ">
+                <div className="flex flex-col gap-[10px] justify-between   image-wrapper">
+                  <Link
+                    href="https://decrypt.co/243964/solana-etfs-inevitable-us-brazil-approval-vaneck-exec"
+                    className="image-container"
+                    target="_blank"
+                  >
+                    {" "}
                     <Image
                       alt="Image Banner"
                       src={ImageTwo}
@@ -80,19 +90,24 @@ export default function CryptoComponent({
                       objectFit="cover" // Ensures the image covers the container without distortion
                       quality={100}
                     />
+                  </Link>
+
+                  <div className="h-[80px]">
+                    <h3>Solona ETF Teased</h3>
                   </div>
-
-                  <h3>Trump Buys BTC</h3>
-
                   <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been d more recently
-                    with desktop publishing software like Aldus PageMaker
-                    including versions of Lorem Ipsum.
+                    Solana is the next big target for spot ETF issuers in the
+                    United States, but does approval in Brazil mean it'll happen
+                    soon in America?
                   </p>
                 </div>
-                <div className="flex flex-col gap-[10px image-wrapper">
-                  <div className="image-container">
+                <div className="flex flex-col gap-[10px] justify-between  image-wrapper">
+                  <Link
+                    href="https://www.coindesk.com/markets/2024/08/12/bitcoin-nears-58k-in-selloff-ahead-of-busy-data-week/"
+                    className="image-container"
+                    target="_blank"
+                  >
+                    {" "}
                     <Image
                       alt="Image Banner"
                       src={ImageThree}
@@ -102,15 +117,16 @@ export default function CryptoComponent({
                       objectFit="cover" // Ensures the image covers the container without distortion
                       quality={100}
                     />
+                  </Link>
+
+                  <div className="h-[80px]">
+                    <h3>Bitcoin 100K EOY?</h3>
                   </div>
 
-                  <h3>Trump Buys BTC</h3>
-
                   <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been d more recently
-                    with desktop publishing software like Aldus PageMaker
-                    including versions of Lorem Ipsum.
+                    Crypto markets lack a clear anchor and are susceptible to
+                    continued position adjustments based on traditional finance
+                    markets, one analyst said.
                   </p>
                 </div>
               </div>

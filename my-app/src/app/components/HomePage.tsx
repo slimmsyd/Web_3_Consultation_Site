@@ -16,6 +16,7 @@ import Head from "next/head";
 import Lenis from "lenis";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+
 gsap.registerPlugin(ScrollTrigger);
 
 

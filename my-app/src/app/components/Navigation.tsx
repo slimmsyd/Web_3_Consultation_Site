@@ -1,12 +1,28 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
+import { use, useEffect, useRef, useState } from "react";
 import { RefObject } from "react";
-import { ConnectButton } from "thirdweb/react";
+import {
+  ConnectButton,
+  useAutoConnect,
+  useActiveAccount,
+  useActiveWallet,
+  useIsAutoConnecting,
+  useWalletBalance,
+} from "thirdweb/react";
 // import { ConnectButton } from "@rainbow-me/rainbowkit";
 import { client } from "../helper/client";
 // import "@rainbow-me/rainbowkit/styles.css";
+
+import { createWallet, inAppWallet } from "thirdweb/wallets";
+
+const wallets = [
+  inAppWallet(),
+  createWallet("io.metamask"),
+  createWallet("com.coinbase.wallet"),
+  createWallet("me.rainbow"),
+];
 
 interface NavigationProps {
   scrollToSection: (ref: RefObject<HTMLElement>) => void;
@@ -39,8 +55,62 @@ export default function Navigation({
     console.log("Logging the Show BG show", showBG);
   }, [showBG]);
 
+  const [isWalletConnected, setIsWalletConnected] = useState<boolean>(false);
+  const [connectedAddress, setConnectedAddress] = useState<string>("");
+
+  const { data: autoConnected, isLoading } = useAutoConnect({
+    client,
+    wallets,
+  });
+  //check if user is connected our not
+
+  const activeAccount = useActiveAccount();
+
+  useEffect(() => {
+    console.log("address", activeAccount?.address);
+    setConnectedAddress(activeAccount?.address as string);
+    console.log("Logging the connected addres before", connectedAddress);
+  }, [connectedAddress]);
+
+  useEffect(() => {
+    console.log("IS wallet connect true or false", isWalletConnected);
+
+    if (connectedAddress) {
+      console.log("Logging the connected adddress address", connectedAddress);
+      setIsWalletConnected(true);
+    }
+  }, [connectedAddress]);
+
+  const [isVisible, setIsVisible] = useState(false);
+  const navRef = useRef(null);
+
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(false); // Nav is in view, hide the button
+        } else {
+          setIsVisible(true); // Nav is out of view, show the button
+        }
+      },
+      { threshold: 0.1 } // Trigger when 10% of the nav is in view
+    );
+
+    if (navRef.current) {
+      observer.observe(navRef.current);
+    }
+
+    return () => {
+      if (navRef.current) {
+        observer.unobserve(navRef.current);
+      }
+    };
+  }, []);
+
+
   return (
-    <div className="flex flex-row nav-container">
+    <div className="flex flex-row nav-container " ref={navRef} >
       <div className="flex flex-row w-full nav-wrapper">
         <div onClick={() => scrollToSection(refSection1)} className="nav-block">
           What You Learn
@@ -60,11 +130,28 @@ export default function Navigation({
       </div>
 
       <div
-        className = {`p-[10px] lg:block hidden`}
+        className={`p-[10px] fixed ${
+          isVisible && isWalletConnected ? "block" : "hidden"
+        }`}
       >
         <ConnectButton
-        
           client={client}
+          wallets={wallets}
+          appMetadata={{
+            name: "Black Web3",
+            url: "https://example.com",
+          }}
+        />
+      </div>
+
+      <div
+        className={`p-[10px] fixed transition-opacity duration-300 ${
+          isVisible ? "opacity-100" : "opacity-0"
+        }`}
+      >
+        <ConnectButton
+          client={client}
+          wallets={wallets}
           appMetadata={{
             name: "Black Web3",
             url: "https://example.com",
@@ -105,7 +192,7 @@ export default function Navigation({
             url: "https://example.com",
           }}
         />
-        
+
         {/* <button className="mobile-btn">Connect wallet</button> */}
 
         <span className="div-border-bottom"></span>

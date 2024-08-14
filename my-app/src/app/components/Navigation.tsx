@@ -130,9 +130,8 @@ export default function Navigation({
       </div>
 
       <div
-        className={`p-[10px] fixed ${
-          isVisible && isWalletConnected ? "block" : "hidden"
-        }`}
+        className={`p-[10px] lg:block hidden
+        `}
       >
         <ConnectButton
           client={client}

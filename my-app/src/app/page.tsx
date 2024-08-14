@@ -3,7 +3,6 @@
 import Image from "next/image";
 
 import HomePage from "./components/HomePage";
-import { Providers } from "./provder";
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 // import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 const queryClient = new QueryClient();

@@ -60,9 +60,10 @@ export default function Navigation({
       </div>
 
       <div
-        className = "p-[10px]"
+        className = {`p-[10px] lg:block hidden`}
       >
         <ConnectButton
+        
           client={client}
           appMetadata={{
             name: "Black Web3",
@@ -97,7 +98,15 @@ export default function Navigation({
           showBG ? "show" : ""
         } text-black`}
       >
-        <button className="mobile-btn">Connect wallet</button>
+        <ConnectButton
+          client={client}
+          appMetadata={{
+            name: "Black Web3",
+            url: "https://example.com",
+          }}
+        />
+        
+        {/* <button className="mobile-btn">Connect wallet</button> */}
 
         <span className="div-border-bottom"></span>
 

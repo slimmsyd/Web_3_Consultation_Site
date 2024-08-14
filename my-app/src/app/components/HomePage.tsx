@@ -18,9 +18,36 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
+
 import { RefObject } from "react";
+import * as React from "react";
+
+// //Web 3 Work 
+// import { ConnectButton } from "@rainbow-me/rainbowkit";
+// import { formatEther } from "viem/utils";
+// import { useAccount, useBalance, useContractRead } from "wagmi";
+// import { readContract, waitForTransaction, writeContract } from "wagmi/actions";
+
+
 
 export default function HomePage() {
+
+
+//Wallet Connects 
+
+//Check if the user wallet is connect, and its address using WAGMI hooks 
+// const {address, isConnected} = useAccount(); 
+//State variable to know if the component has been moutned yet or not 
+const [isMounted, setIsMounted] = useState<boolean>(false); 
+//State vraible to show loading state when waitng tor wallet to connect? 
+
+const [loading, setLoading] = useState<boolean>(false);
+
+
+
+
+
+
   useEffect(() => {
     // Initialize Lenis for smooth scrolling
     const lenis = new Lenis({

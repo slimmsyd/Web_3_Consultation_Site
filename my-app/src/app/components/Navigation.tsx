@@ -3,6 +3,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { RefObject } from "react";
+import { ConnectButton } from "thirdweb/react";
+// import { ConnectButton } from "@rainbow-me/rainbowkit";
+import { client } from "../helper/client";
+// import "@rainbow-me/rainbowkit/styles.css";
 
 interface NavigationProps {
   scrollToSection: (ref: RefObject<HTMLElement>) => void;
@@ -55,7 +59,17 @@ export default function Navigation({
         </div>
       </div>
 
-      <div className="nav-block w-large border-r-0">Connect Wallet</div>
+      <div
+        className = "p-[10px]"
+      >
+        <ConnectButton
+          client={client}
+          appMetadata={{
+            name: "Black Web3",
+            url: "https://example.com",
+          }}
+        />
+      </div>
 
       <div className="mobile-nav-wrapper flex flex-row gap-[15px] px-[1rem] items-center">
         {/* <button className = " w-full">Connect Wallet</button> */}

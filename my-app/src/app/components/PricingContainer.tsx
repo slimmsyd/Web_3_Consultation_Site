@@ -7,12 +7,14 @@ import { PricingCard } from "./subComponents/PricingCard";
 import React, { RefObject } from "react";
 
 interface Props {
-  refSection4: RefObject<HTMLDivElement>;
+  priceRef: RefObject<HTMLDivElement>;
 }
 
-export default function PriceContainer({  }) {
+export default function PriceContainer({ priceRef } : Props) {
   return (
-    <section  className="h-full site-wrapper bg-black">
+    <section 
+    ref = {priceRef}
+    className="h-full site-wrapper bg-black">
       <div className="site-container h-full flex flex-col gap-[35px]  pb-[100px]">
         <div className="flex flex-col items-center gap-[5px] mb-[20px] text-center">
           <h2 className="text-[40px]">Get Started On Your Crypto Evolution</h2>

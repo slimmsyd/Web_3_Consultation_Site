@@ -19,35 +19,25 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-
 import { RefObject } from "react";
 import * as React from "react";
 
-// //Web 3 Work 
+// //Web 3 Work
 // import { ConnectButton } from "@rainbow-me/rainbowkit";
 // import { formatEther } from "viem/utils";
 // import { useAccount, useBalance, useContractRead } from "wagmi";
 // import { readContract, waitForTransaction, writeContract } from "wagmi/actions";
 
-
-
 export default function HomePage() {
+  //Wallet Connects
 
+  //Check if the user wallet is connect, and its address using WAGMI hooks
+  // const {address, isConnected} = useAccount();
+  //State variable to know if the component has been moutned yet or not
+  const [isMounted, setIsMounted] = useState<boolean>(false);
+  //State vraible to show loading state when waitng tor wallet to connect?
 
-//Wallet Connects 
-
-//Check if the user wallet is connect, and its address using WAGMI hooks 
-// const {address, isConnected} = useAccount(); 
-//State variable to know if the component has been moutned yet or not 
-const [isMounted, setIsMounted] = useState<boolean>(false); 
-//State vraible to show loading state when waitng tor wallet to connect? 
-
-const [loading, setLoading] = useState<boolean>(false);
-
-
-
-
-
+  const [loading, setLoading] = useState<boolean>(false);
 
   useEffect(() => {
     // Initialize Lenis for smooth scrolling
@@ -90,12 +80,11 @@ const [loading, setLoading] = useState<boolean>(false);
   const refSection4 = useRef<HTMLDivElement>(null);
   const refSection5 = useRef<HTMLDivElement>(null);
   const refSectionHome = useRef<HTMLDivElement>(null);
+  const priceRef = useRef<HTMLDivElement>(null);
 
   return (
     <>
-      <div className="site-wrapper relative"
-      ref = {refSectionHome}
-      >
+      <div className="site-wrapper relative" ref={refSectionHome}>
         <div className="overlayDark absolute"></div>
         <div className="absolute video-bg">
           <Video
@@ -164,18 +153,29 @@ const [loading, setLoading] = useState<boolean>(false);
       </div>
 
       <TestimonialContainer />
-      <CryptoComponent refSection1={refSection1} refSection4={refSection4} />
+      <CryptoComponent
+        refSection1={refSection1}
+        refSection4={refSection4}
+        scrollToSection={scrollToSection}
+        priceRef={priceRef}
+      />
 
-      <DecentralizedComponent refSection2={refSection2} />
-      <AIComponent refSection3={refSection3} />
-      <PriceContainer />
+      <DecentralizedComponent
+        refSection2={refSection2}
+        scrollToSection={scrollToSection}
+        priceRef={priceRef}
+      />
+      <AIComponent refSection3={refSection3} 
+     
+      />
+      <PriceContainer priceRef={priceRef} />
 
       <Footer
-         refSection1={refSection1}
-         refSection2={refSection2}
-         refSection3={refSection3}
-         refSection4={refSection4}
-         refSectionHome ={refSectionHome}
+        refSection1={refSection1}
+        refSection2={refSection2}
+        refSection3={refSection3}
+        refSection4={refSection4}
+        refSectionHome={refSectionHome}
       />
     </>
   );

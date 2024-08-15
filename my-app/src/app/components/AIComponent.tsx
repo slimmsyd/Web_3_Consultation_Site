@@ -6,9 +6,13 @@ import React, { RefObject } from "react";
 
 interface Props {
   refSection3: RefObject<HTMLDivElement>;
+
 }
 
-export default function AIComponent({ refSection3 }: Props) {
+export default function AIComponent({
+  refSection3,
+
+}: Props) {
   return (
     <section ref={refSection3} className="h-full site-wrapper bg-black">
       <div className="site-container h-full">

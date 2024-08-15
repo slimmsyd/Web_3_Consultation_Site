@@ -12,11 +12,15 @@ import ImageThree from "../../../public/HomeAssets/image4.png";
 interface CryptoComponentProps {
   refSection1: RefObject<HTMLDivElement>;
   refSection4: RefObject<HTMLDivElement>;
+  scrollToSection: (ref: RefObject<HTMLElement>) => void;
+  priceRef: RefObject<HTMLDivElement>;
 }
 
 export default function CryptoComponent({
   refSection1,
   refSection4,
+  scrollToSection,
+  priceRef,
 }: CryptoComponentProps) {
   return (
     <>
@@ -27,7 +31,12 @@ export default function CryptoComponent({
               <div className="flex flex-col gap-[5px] mb-[20px]">
                 <span>what and why</span>
                 <h2>Crypto</h2>
-                <button className="join-btn clear-bg">Book A Call</button>
+                <button
+                  onClick={() => scrollToSection(priceRef)}
+                  className="join-btn clear-bg"
+                >
+                  Book A Call
+                </button>
               </div>
 
               <div className="text-[18px] font-thin flex flex-col gap-[5px]">
@@ -169,7 +178,12 @@ export default function CryptoComponent({
                   unchangeable and transparent record.
                 </p>
 
-                <button className="join-btn clear-bg">Book A Call</button>
+                <button
+                  onClick={() => scrollToSection(priceRef)}
+                  className="join-btn clear-bg"
+                >
+                  Book A Call
+                </button>
               </div>
             </div>
           </div>

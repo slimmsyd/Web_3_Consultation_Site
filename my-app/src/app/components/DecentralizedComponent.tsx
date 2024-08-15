@@ -7,9 +7,16 @@ import React, { RefObject } from "react";
 
 interface Props {
   refSection2: RefObject<HTMLDivElement>;
+  scrollToSection: (ref: RefObject<HTMLElement>) => void;
+  priceRef: RefObject<HTMLDivElement>;
+
 }
 
-export default function DecentralizedComponent({ refSection2 }: Props) {
+export default function DecentralizedComponent({ refSection2,
+  scrollToSection,
+  priceRef
+
+ }: Props) {
   return (
     <section
       ref={refSection2}
@@ -49,7 +56,9 @@ export default function DecentralizedComponent({ refSection2 }: Props) {
               />
             </div>
 
-            <button className="large-btn">Book A Call</button>
+            <button
+            onClick={ () => scrollToSection(priceRef)}
+            className="large-btn">Book A Call</button>
           </div>
         </div>
 

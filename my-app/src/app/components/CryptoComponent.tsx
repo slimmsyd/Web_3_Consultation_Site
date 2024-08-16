@@ -231,7 +231,7 @@ export default function CryptoComponent({
                   </pre>
                 </div>
 
-                <h4 className="text-[28px]">Understanding Crypto</h4>
+                <h4 className="text-[28px] text-white">Understanding Crypto</h4>
 
                 <div className="flex-col flex gap-[25px]">
                   <div className="flex flex-col gap-[5px] mt-[20px]">
@@ -267,7 +267,7 @@ export default function CryptoComponent({
               </div>
 
               <div className="flex flex-col gap-[5px] text-div text-center md:text-left">
-                <h2>
+                <h2 className = "text-white">
                   Future is here, it is your rsight to take control of it.
                 </h2>
                 <p className="text-[14px] text-[#b4b4b4] ">

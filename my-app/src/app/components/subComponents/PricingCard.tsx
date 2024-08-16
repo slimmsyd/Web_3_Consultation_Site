@@ -26,7 +26,7 @@ export const PricingCard: FC<Props> = ({
 
       <div className="flex flex-col  gap-[10px] flex-1">
         <div className="flex flex-row items-center gap-[8px]">
-          <span className="text-[28px]">{pricing}</span>
+          <span className="text-[28px] text-white">{pricing}</span>
 
           <span className="divider-line"> /</span>
 

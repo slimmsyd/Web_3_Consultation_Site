@@ -47,7 +47,7 @@ export default function TestimonialContainer() {
     },
     {
       quote:
-        "Rio provided unparalleled clarity on Crypt, Dropping gold gems, knows what he is talking about",
+        "Rio provided unparalleled clarity on Crypto, Dropping gold gems, knows what he is talking about",
         author: "Mike",
 
 

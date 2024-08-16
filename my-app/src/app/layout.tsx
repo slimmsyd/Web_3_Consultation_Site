@@ -3,16 +3,14 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThirdwebProvider } from "thirdweb/react";
 
-
 import { Gnosis, Ethereum } from "@thirdweb-dev/chains";
-
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "thirdweb SDK + Next starter",
+  title: "Black Web3",
   description:
-    "Starter template for using thirdweb SDK with Next.js App router",
+    "Empowering Black communities through Web3 consulting. Gain knowledge in blockchain, DeFi, and cryptocurrency to take control of your financial future. Learn, build, and grow with expert guidance tailored to those in need.",
 };
 
 export default function RootLayout({
@@ -23,13 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <ThirdwebProvider
-        >
-          
-          {children
-        
-        }
-        </ThirdwebProvider>
+        <ThirdwebProvider>{children}</ThirdwebProvider>
       </body>
     </html>
   );

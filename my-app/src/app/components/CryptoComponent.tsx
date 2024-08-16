@@ -156,7 +156,7 @@ export default function CryptoComponent({
 
               </div>
               <div className="video-container relative">
-                <div className="overlayDark absolute"></div>
+                {/* <div className="overlayDark absolute"></div> */}
                 <Video
                   src="https://www.blackw3b.io/Bitcoin_Vid.mp4"
                   type="video/mp4"

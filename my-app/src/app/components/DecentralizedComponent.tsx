@@ -42,13 +42,13 @@ export default function DecentralizedComponent({ refSection2,
             </div>
 
             <div className="video-container relative">
-              <div className="overlayDark absolute"></div>
+              {/* <div className="overlayDark absolute"></div> */}
               <Video
-                src="https://www.blackw3b.io/Defi_Vid.mp4"
+                src="https://www.blackw3b.io/Defi_Video.mp4"
                 type="video/mp4"
                 width="100%"
                 height="100vh"
-                controls={false}
+                controls={true}
                 autoPlay={true}
                 loop={true}
                 muted={false}

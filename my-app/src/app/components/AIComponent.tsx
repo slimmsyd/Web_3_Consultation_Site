@@ -18,13 +18,13 @@ export default function AIComponent({
       <div className="site-container h-full">
         <div className="col-start-2 my-[88px] px-[2rem]">
           <div className="video-container relative">
-            <div className="overlayDark absolute"></div>
+            {/* <div className="overlayDark absolute"></div> */}
             <Video
                 src="https://www.blackw3b.io/AI_Laning_Video.mp4"
                 type="video/mp4"
               width="100%"
               height="100vh"
-              controls={false}
+              controls={true}
               autoPlay={true}
               loop={true}
               muted={false}

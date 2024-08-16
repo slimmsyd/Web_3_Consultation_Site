@@ -32,10 +32,10 @@ export default function HeaderComponent({
       />
 
       <div className="flex flex-col h-[80%] items-center justify-end">
-        <div className="flex flex-col gap-[5px] items-center text-center w-[80%]">
+        <div className="flex flex-col gap-[5px] items-center text-center w-[80%] text-white">
           <h1 className="font-medium header-h1">Becoming Sovereign</h1>
 
-          <p className="font-light">Come to learn new frontier of finance.</p>
+          <p className="font-light  text-white ">Come to learn new frontier of finance.</p>
 
           <div className="flex flex-row gap-[20px] mt-[20px]">
             <button className="join-btn">Learn More</button>

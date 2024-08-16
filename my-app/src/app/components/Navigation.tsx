@@ -111,20 +111,20 @@ export default function Navigation({
 
   return (
     <div className="flex flex-row nav-container " ref={navRef} >
-      <div className="flex flex-row w-full nav-wrapper">
-        <div onClick={() => scrollToSection(refSection1)} className="nav-block">
+      <div className="flex flex-row w-full nav-wrapper text-white">
+        <div onClick={() => scrollToSection(refSection1)} className="nav-block  text-white">
           What You Learn
         </div>
-        <div onClick={() => scrollToSection(refSection2)} className="nav-block">
+        <div onClick={() => scrollToSection(refSection2)} className="nav-block  text-white">
           Defi
         </div>
-        <div onClick={() => scrollToSection(refSection3)} className="nav-block">
+        <div onClick={() => scrollToSection(refSection3)} className="nav-block  text-white">
           Crypto
         </div>
-        <div onClick={() => scrollToSection(refSection4)} className="nav-block">
+        <div onClick={() => scrollToSection(refSection4)} className="nav-block  text-white">
           Blockchain
         </div>
-        <div onClick={() => scrollToSection(refSection3)} className="nav-block">
+        <div onClick={() => scrollToSection(refSection3)} className="nav-block  text-white">
           AI Meets Blockchain
         </div>
       </div>

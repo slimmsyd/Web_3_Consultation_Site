@@ -20,8 +20,8 @@ export default function AIComponent({
           <div className="video-container relative">
             <div className="overlayDark absolute"></div>
             <Video
-              src="http://localhost:3000/ether.mp4"
-              type="video/mp4"
+                src="https://www.blackw3b.io/AI_Laning_Video.mp4"
+                type="video/mp4"
               width="100%"
               height="100vh"
               controls={false}

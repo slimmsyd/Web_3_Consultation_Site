@@ -29,8 +29,8 @@ export default function CryptoComponent({
           <div className="my-[88px] md:px-[2rem] px-[10px]">
             <div className="flex flex-col gap-[10px]">
               <div className="flex flex-col gap-[5px] mb-[20px] text-white">
-                <span>what and why</span>
-                <h2>Crypto</h2>
+                <span className = "text-white">what and why</span>
+                <h2 className = "text-white">Crypto</h2>
                 <button
                   onClick={() => scrollToSection(priceRef)}
                   className="join-btn clear-bg"

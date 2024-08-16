@@ -42,15 +42,13 @@ export default function TestimonialContainer() {
     {
       quote:
         "Rio demystified the complexities of DeFi with precision, guiding me through the nuances effortlessly. Gaining me 19% interest on my asset",
+      author: "Tristen",
 
-      author: "Mike",
-      image: Syd,
     },
     {
       quote:
-     "Rio provided unparalleled clarity on Crypt, Dropping gold gems, knows what he is talking about",
-      author: "Tristen",
-      image: Syd,
+        "Rio provided unparalleled clarity on Crypt, Dropping gold gems, knows what he is talking about",
+
     },
   ];
 
@@ -116,16 +114,19 @@ export default function TestimonialContainer() {
 
               <div className="flex flex-row gap-[20px] flex-1 mt-[50px] items-center">
                 <div className="social-container-image">
-                  <Image
-                    src={quotes[currentIndex].image}
-                    width={20}
-                    height={20}
-                    layout="responsive"
-                    objectFit="contain"
-                    quality={100}
-                    alt={`${quotes[currentIndex].author} Photo`}
-                  />
+                  {quotes[currentIndex].image && (
+                    <Image
+                      src={quotes[currentIndex].image}
+                      width={20}
+                      height={20}
+                      layout="responsive"
+                      objectFit="contain"
+                      quality={100}
+                      alt={`${quotes[currentIndex].author} Photo`}
+                    />
+                  )}
                 </div>
+
                 <div className="flex flex-row">
                   <span className="text-black">
                     {quotes[currentIndex].author}

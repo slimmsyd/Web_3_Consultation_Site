@@ -163,7 +163,7 @@ export default function CryptoComponent({
                   width="100%"
                   height="100vh"
                   controls={true}
-                  autoPlay={false}
+                  autoPlay={true}
                   loop={true}
                   muted={false}
                   className="relative"

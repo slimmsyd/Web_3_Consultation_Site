@@ -49,7 +49,7 @@ export default function DecentralizedComponent({ refSection2,
                 width="100%"
                 height="100vh"
                 controls={true}
-                autoPlay={false}
+                autoPlay={true}
                 loop={true}
                 muted={false}
                 className="relative"

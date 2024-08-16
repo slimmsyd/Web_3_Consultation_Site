@@ -28,7 +28,7 @@ export default function CryptoComponent({
         <div className="site-container h-full">
           <div className="my-[88px] md:px-[2rem] px-[10px]">
             <div className="flex flex-col gap-[10px]">
-              <div className="flex flex-col gap-[5px] mb-[20px]">
+              <div className="flex flex-col gap-[5px] mb-[20px] text-white">
                 <span>what and why</span>
                 <h2>Crypto</h2>
                 <button

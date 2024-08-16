@@ -29,18 +29,23 @@ export default function PriceContainer({ priceRef } : Props) {
             timing={"30"}
             pricing2={"$75"}
             timing2={"60"}
+            category = {"Beginner"}
           />
           <PricingCard
             pricing={"$75"}
             timing={"45"}
             pricing2={"$120"}
-            timing2={"120"}
+            timing2={"90"}
+            category = {"Intermediate"}
+
           />
           <PricingCard
             pricing={"$125"}
             timing={"45"}
             pricing2={"$175"}
-            timing2={"120"}
+            timing2={"90"}
+            category = {"Expert"}
+
           />
         </div>
       </div>

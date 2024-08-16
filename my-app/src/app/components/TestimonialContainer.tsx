@@ -41,7 +41,7 @@ export default function TestimonialContainer() {
     },
     {
       quote:
-        "Rio demystified the complexities of DeFi with precision, guiding me through the nuances effortlessly.",
+        "Rio demystified the complexities of DeFi with precision, guiding me through the nuances effortlessly. Gaining me 19% interest on my asset",
 
       author: "Enter Name Here",
       image: Syd,

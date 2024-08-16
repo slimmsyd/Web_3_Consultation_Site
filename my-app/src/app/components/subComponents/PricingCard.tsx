@@ -8,6 +8,7 @@ interface Props {
   pricing2: string;
   timing: string;
   timing2: string;
+  category: string;
 }
 
 export const PricingCard: FC<Props> = ({
@@ -15,11 +16,12 @@ export const PricingCard: FC<Props> = ({
   timing,
   pricing2,
   timing2,
+  category,
 }) => {
   return (
     <div className="pricing-card-container flex flex-col h-full">
       <div className="mb-[15px]">
-        <h4>Beginner</h4>
+        <h4>{category}</h4>
       </div>
 
       <div className="flex flex-col  gap-[10px] flex-1">
@@ -45,7 +47,7 @@ export const PricingCard: FC<Props> = ({
       </div>
 
       <Link
-        href="https://calendly.com/blckw3b/30min?back=1&month=2024-08&date=2024-08-15"
+        href="https://calendly.com/blckw3b"
         target="_blank"
         className="price-btn cursor-pointer flex items-center justify-center"
       >

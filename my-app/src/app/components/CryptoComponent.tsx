@@ -150,16 +150,19 @@ export default function CryptoComponent({
               <div className="flex flex-col items-center gap-[5px] mb-[20px]">
                 <span>what and why</span>
                 <h2 ref={refSection4}>Blockchain</h2>
-              </div>
+                <p className="text-[14px] text-[#b4b4b4] text-center ">
+                  watch video
+              </p>
 
+              </div>
               <div className="video-container relative">
                 <div className="overlayDark absolute"></div>
                 <Video
-                  src="http://localhost:3000/ether.mp4"
+                  src="http://localhost:3000/Bitcoin_Vid.mp4"
                   type="video/mp4"
                   width="100%"
                   height="100vh"
-                  controls={false}
+                  controls={true}
                   autoPlay={true}
                   loop={true}
                   muted={false}

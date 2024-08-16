@@ -43,13 +43,13 @@ export default function TestimonialContainer() {
       quote:
         "Rio demystified the complexities of DeFi with precision, guiding me through the nuances effortlessly. Gaining me 19% interest on my asset",
 
-      author: "Enter Name Here",
+      author: "Mike",
       image: Syd,
     },
     {
       quote:
-     "Rio provided unparalleled clarity on NFTs, transforming my understanding and positioning me for success in the space.",
-      author: "Enter Name Here",
+     "Rio provided unparalleled clarity on Crypt, Dropping gold gems, knows what he is talking about",
+      author: "Tristen",
       image: Syd,
     },
   ];

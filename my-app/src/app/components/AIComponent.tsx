@@ -25,7 +25,7 @@ export default function AIComponent({
               width="100%"
               height="100vh"
               controls={true}
-              autoPlay={true}
+              autoPlay={false}
               loop={true}
               muted={false}
               className="relative"

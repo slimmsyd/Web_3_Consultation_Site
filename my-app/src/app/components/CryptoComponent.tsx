@@ -74,7 +74,7 @@ export default function CryptoComponent({
                   </Link>
 
                   <div className="h-[80px]">
-                    <h3>Trump Sons Tease "Crypto"</h3>
+                    <h3 className = "text-white" >Trump Sons Tease "Crypto"</h3>
                   </div>
 
                   <p>
@@ -102,7 +102,7 @@ export default function CryptoComponent({
                   </Link>
 
                   <div className="h-[80px]">
-                    <h3>Solona ETF Teased</h3>
+                    <h3 className = "text-white">Solona ETF Teased</h3>
                   </div>
                   <p>
                     Solana is the next big target for spot ETF issuers in the
@@ -129,7 +129,7 @@ export default function CryptoComponent({
                   </Link>
 
                   <div className="h-[80px]">
-                    <h3>Bitcoin 100K EOY?</h3>
+                    <h3 className = "text-white" >Bitcoin 100K EOY?</h3>
                   </div>
 
                   <p>

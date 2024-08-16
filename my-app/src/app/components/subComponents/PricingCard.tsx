@@ -21,7 +21,7 @@ export const PricingCard: FC<Props> = ({
   return (
     <div className="pricing-card-container flex flex-col h-full">
       <div className="mb-[15px]">
-        <h4>{category}</h4>
+        <h4 className = "text-white">{category}</h4>
       </div>
 
       <div className="flex flex-col  gap-[10px] flex-1">
@@ -34,7 +34,7 @@ export const PricingCard: FC<Props> = ({
         </div>
 
         <div className="flex flex-row items-center gap-[8px]">
-          <span className="text-[28px]">{pricing2}</span>
+          <span className="text-[28px] text-white">{pricing2}</span>
 
           <span className="divider-line"> /</span>
 

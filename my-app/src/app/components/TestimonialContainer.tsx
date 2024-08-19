@@ -96,7 +96,7 @@ export default function TestimonialContainer() {
           </h1>
 
           <p className="text-[#4c4c4c] text-[16px] font-light">
-            Here not From me, but to those I have served
+            Hear not From me, but from those I have served
           </p>
         </div>
         <div className="testimonal-container items-center  px-[5px] md:px-[25px] pt-[100px] pb-[100px] flex flex-col">

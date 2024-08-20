@@ -290,7 +290,6 @@ p {
 .move-back , .move-forward{ 
   display: flex;
   align-items: center;
-  justify-content: center;
   border: 1px solid #6042F3;
 }
 .move-back:hover, .move-forward:hover{
@@ -384,7 +383,7 @@ p {
 .pricing-card-container {
   width: 300px;
   padding: 1.5rem;
-  height: 380px;
+  height: 530px;
   border: 0.5px solid #5d5d5d;
   border-radius: 8px;
 }

@@ -4,11 +4,13 @@ import { useEffect, useRef, useState } from "react";
 import React, { FC, RefObject } from "react";
 
 interface Props {
-  pricing: string;
-  pricing2: string;
-  timing: string;
-  timing2: string;
-  category: string;
+  pricing?: string;
+  pricing2?: string;
+  timing?: string;
+  timing2?: string;
+  category?: string;
+  minutes?: string;
+  text? :string 
 }
 
 export const PricingCard: FC<Props> = ({
@@ -17,7 +19,13 @@ export const PricingCard: FC<Props> = ({
   pricing2,
   timing2,
   category,
+  minutes,
+  text
 }) => {
+
+
+  const items = text?.split(',');
+
   return (
     <div className="pricing-card-container flex flex-col h-full">
       <div className="mb-[15px]">
@@ -38,12 +46,20 @@ export const PricingCard: FC<Props> = ({
 
           <span className="divider-line"> /</span>
 
-          <span className="text-[16px] text-[#b4b4b4]">{timing2} minutes</span>
+          <span className="text-[16px] text-[#b4b4b4]">{timing2} {minutes}</span>
         </div>
 
         <p className="text-[14px] text-[#b4b4b4] ">
           Essential features of this and that
         </p>
+        <span className="text-[14px]">
+          {/* Render the list */}
+          <ul>
+            {items?.map((item, index) => (
+              <li key={index}>{item.trim()}</li>
+            ))}
+          </ul>
+        </span>
       </div>
 
       <Link

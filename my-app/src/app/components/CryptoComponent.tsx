@@ -275,7 +275,7 @@ export default function CryptoComponent({
 
               <div className="flex flex-col gap-[5px] text-div text-center md:text-left">
                 <h2 className="text-white">
-                  Future is here, it is your sight to take control of it.
+                  Future is here, is in your sight to take control of it.
                 </h2>
                 <p className="text-[14px] text-[#b4b4b4] ">
                   Staying ahead of financial trends is key to protecting your

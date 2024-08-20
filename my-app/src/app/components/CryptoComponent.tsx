@@ -39,7 +39,7 @@ export default function CryptoComponent({
                 </button>
               </div>
 
-              <div className="text-[18px] font-thin flex flex-col gap-[5px]">
+              <div className="text-[18px] font-thin flex flex-col gap-[5px] text-white  ">
                 <p>
                   When it comes to crypto, scams may be your first thought. But
                   that's not the whole story. Crypto is the solution to

@@ -91,8 +91,8 @@ export default function TestimonialContainer() {
 
       <div className="testimonal-header flex flex-col w-full ">
         <div className="borderDiv px-[25px] ">
-          <h1 className="lg:text-[60px] text-[40px] text-black lineHeight">
-            Learn About The New World Order
+          <h1 className="lg:text-[40px] text-[40px] text-black lineHeight">
+          Let us help you navigate the world of crypto and web3 
           </h1>
 
           <p className="text-[#4c4c4c] text-[16px] font-light">

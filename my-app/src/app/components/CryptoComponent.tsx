@@ -30,7 +30,7 @@ export default function CryptoComponent({
             <div className="flex flex-col gap-[10px]">
               <div className="flex flex-col gap-[5px] mb-[20px] text-white">
                 <span className="text-white">what and why</span>
-                <h2 className="text-white">Crypto</h2>
+                <h2 className="text-white">Black W3B?</h2>
                 <button
                   onClick={() => scrollToSection(priceRef)}
                   className="join-btn clear-bg"
@@ -41,17 +41,25 @@ export default function CryptoComponent({
 
               <div className="text-[18px] font-thin flex flex-col gap-[5px]">
                 <p>
-                  Cryptocurrency is a digital or virtual form of money that uses
-                  cryptography for security. Unlike traditional currencies like
-                  dollars or euros, cryptocurrencies operate on decentralized
-                  networks based on blockchain technology. The most well-known
-                  cryptocurrency is Bitcoin, but there are thousands of others,
-                  each with unique features and uses.
+                  When it comes to crypto, scams may be your first thought. But
+                  that's not the whole story. Crypto is the solution to
+                  inflation, a way to invest and access your money instantly.
+                  It's the future universal currency. Banks can't give you
+                  massive returns in 24 hours, but we can. Don't miss out on
+                  being on the right side of history. Let us help you navigate
+                  the world of crypto and web3 for a brighter financial future.
                 </p>
+                <br />
                 <p>
-                  Accessibility: Cryptocurrencies can be accessed and used by
-                  anyone with an internet connection, providing financial
-                  services to unbanked populations around the world.
+                  Access and activate the full potential of a decentralized
+                  financial future with the
+                  <span className="text-[#6042F3]">"BlackW3B"</span>- your
+                  ultimate destination for expert-led education in blockchain,
+                  crypto, AI, and web3 technologies, empowering you to thrive in
+                  the
+                  <span className="text-[#6042F3]"> top 0.1% of people </span>
+                  in this newly emerging and innovative financial digital
+                  revolution.
                 </p>
               </div>
 
@@ -101,12 +109,11 @@ export default function CryptoComponent({
                   </Link>
 
                   <div className="h-[80px]">
-                    <h3 className="text-white">
-                      {" "}
-                      Exploring Solona
-                    </h3>
+                    <h3 className="text-white"> Exploring Solona</h3>
                   </div>
-                  <p>Behind the Rise of SOL: Understanding Solana's Growing Popularity
+                  <p>
+                    Behind the Rise of SOL: Understanding Solana's Growing
+                    Popularity
                   </p>
                 </div>
                 <div className="flex flex-col gap-[10px] justify-between  image-wrapper">
@@ -128,7 +135,9 @@ export default function CryptoComponent({
                   </Link>
 
                   <div className="h-[80px]">
-                    <h3 className="text-white">The Dawn of AI and Blockchain</h3>
+                    <h3 className="text-white">
+                      The Dawn of AI and Blockchain
+                    </h3>
                   </div>
 
                   <p>

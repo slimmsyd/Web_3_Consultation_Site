@@ -5,8 +5,8 @@ import { useEffect, useRef, useState } from "react";
 import React, { RefObject } from "react";
 import Image from "next/image";
 
-import ImageOne from "../../../public/HomeAssets/AI_one.png";
-import ImageTwo from "../../../public/HomeAssets/Bitcoin_ONe.png";
+import ImageOne from "../../../public/HomeAssets/Bitcoin_ONe.png";
+import ImageTwo from "../../../public/HomeAssets/AI_one.png";
 import ImageThree from "../../../public/HomeAssets/AI.png";
 
 interface CryptoComponentProps {

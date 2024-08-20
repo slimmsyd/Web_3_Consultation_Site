@@ -11,6 +11,10 @@ interface Props {
 }
 
 export default function PriceContainer({ priceRef }: Props) {
+
+
+
+  
   return (
     <section ref={priceRef} className="h-full site-wrapper bg-black">
       <div className="site-container h-full flex flex-col gap-[35px]  pb-[100px]">

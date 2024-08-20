@@ -5,9 +5,9 @@ import { useEffect, useRef, useState } from "react";
 import React, { RefObject } from "react";
 import Image from "next/image";
 
-import ImageOne from "../../../public/HomeAssets/image2.png";
-import ImageTwo from "../../../public/HomeAssets/image3.png";
-import ImageThree from "../../../public/HomeAssets/image4.png";
+import ImageOne from "../../../public/HomeAssets/AI_one.png";
+import ImageTwo from "../../../public/HomeAssets/Bitcoin_ONe.png";
+import ImageThree from "../../../public/HomeAssets/AI.png";
 
 interface CryptoComponentProps {
   refSection1: RefObject<HTMLDivElement>;
@@ -29,8 +29,8 @@ export default function CryptoComponent({
           <div className="my-[88px] md:px-[2rem] px-[10px]">
             <div className="flex flex-col gap-[10px]">
               <div className="flex flex-col gap-[5px] mb-[20px] text-white">
-                <span className = "text-white">what and why</span>
-                <h2 className = "text-white">Crypto</h2>
+                <span className="text-white">what and why</span>
+                <h2 className="text-white">Crypto</h2>
                 <button
                   onClick={() => scrollToSection(priceRef)}
                   className="join-btn clear-bg"
@@ -58,7 +58,7 @@ export default function CryptoComponent({
               <div className="flex lg:flex-row flex-col justify-between gap-[20px] mt-[100px]">
                 <div className="flex flex-col gap-[10px] image-wrapper">
                   <Link
-                    href="https://decrypt.co/243622/trump-sons-tease-huge-crypto-announcement"
+                    href="https://critty-combo.medium.com/exploring-web3-the-future-of-the-internet-9be05c8d73eb"
                     className="image-container"
                     target="_blank"
                   >
@@ -74,18 +74,17 @@ export default function CryptoComponent({
                   </Link>
 
                   <div className="h-[80px]">
-                    <h3 className = "text-white" >Trump Sons Tease "Crypto"</h3>
+                    <h3 className="text-white">Exploring Web3</h3>
                   </div>
 
                   <p>
-                    Eric and Donald Trump Jr. say they've fallen in love with
-                    crypto and DeFi and have something "huge" in the works. What
-                    is it? Adrian Zmudzinski
+                    Web3, or Web 3.0, represents the next evolution of the
+                    Internet.
                   </p>
                 </div>
                 <div className="flex flex-col gap-[10px] justify-between   image-wrapper">
                   <Link
-                    href="https://decrypt.co/243964/solana-etfs-inevitable-us-brazil-approval-vaneck-exec"
+                    href="https://medium.com/investbegin/exploring-solana-the-blockchain-revolution-beyond-bitcoin-and-ethereum-c7ffd1979922"
                     className="image-container"
                     target="_blank"
                   >
@@ -102,17 +101,17 @@ export default function CryptoComponent({
                   </Link>
 
                   <div className="h-[80px]">
-                    <h3 className = "text-white">Solona ETF Teased</h3>
+                    <h3 className="text-white">
+                      {" "}
+                      Exploring Solona
+                    </h3>
                   </div>
-                  <p>
-                    Solana is the next big target for spot ETF issuers in the
-                    United States, but does approval in Brazil mean it'll happen
-                    soon in America?
+                  <p>Behind the Rise of SOL: Understanding Solana's Growing Popularity
                   </p>
                 </div>
                 <div className="flex flex-col gap-[10px] justify-between  image-wrapper">
                   <Link
-                    href="https://www.coindesk.com/markets/2024/08/12/bitcoin-nears-58k-in-selloff-ahead-of-busy-data-week/"
+                    href="https://nes-tech.medium.com/2023-roundup-series-the-dawn-of-ai-and-blockchain-integration-237d2e74c57c"
                     className="image-container"
                     target="_blank"
                   >
@@ -129,7 +128,7 @@ export default function CryptoComponent({
                   </Link>
 
                   <div className="h-[80px]">
-                    <h3 className = "text-white" >Bitcoin 100K EOY?</h3>
+                    <h3 className="text-white">The Dawn of AI and Blockchain</h3>
                   </div>
 
                   <p>
@@ -152,8 +151,7 @@ export default function CryptoComponent({
                 <h2 ref={refSection4}>Blockchain</h2>
                 <p className="text-[14px] text-[#b4b4b4] text-center ">
                   watch video
-              </p>
-
+                </p>
               </div>
               <div className="video-container relative">
                 {/* <div className="overlayDark absolute"></div> */}
@@ -267,7 +265,7 @@ export default function CryptoComponent({
               </div>
 
               <div className="flex flex-col gap-[5px] text-div text-center md:text-left">
-                <h2 className = "text-white">
+                <h2 className="text-white">
                   Future is here, it is your sight to take control of it.
                 </h2>
                 <p className="text-[14px] text-[#b4b4b4] ">

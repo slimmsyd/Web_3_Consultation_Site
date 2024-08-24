@@ -6,6 +6,7 @@ interface Props {
   refSection2: RefObject<HTMLDivElement>;
   refSection3: RefObject<HTMLDivElement>;
   refSection4: RefObject<HTMLDivElement>;
+  priceRef: RefObject<HTMLDivElement>;
 }
 
 export default function HeaderComponent({
@@ -13,6 +14,7 @@ export default function HeaderComponent({
   refSection2,
   refSection3,
   refSection4,
+  priceRef,
 }: Props) {
   const scrollToSection = (ref: RefObject<HTMLElement>) => {
     console.log("Scroll to section is being clikec tho", ref);
@@ -45,7 +47,12 @@ export default function HeaderComponent({
           <div className="flex flex-row gap-[20px] mt-[20px]">
             <button className="join-btn">Learn More</button>
 
-            <button className="join-btn clear-bg">Book A Call</button>
+            <button
+              onClick={() => scrollToSection(priceRef)}
+              className="join-btn clear-bg"
+            >
+              Book A Call
+            </button>
           </div>
         </div>
       </div>

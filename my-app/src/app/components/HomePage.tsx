@@ -152,6 +152,8 @@ export default function HomePage() {
           refSection2={refSection2}
           refSection3={refSection3}
           refSection4={refSection4}
+          priceRef={priceRef}
+
         />
       </div>
 

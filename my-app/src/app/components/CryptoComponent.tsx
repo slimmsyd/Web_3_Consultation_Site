@@ -286,9 +286,13 @@ export default function CryptoComponent({
                   inclusive for all.
                 </p>
 
-                <Link className="mt-[20px] text-[#6042F3]" href="/">
+                <button
+
+                onClick={() => scrollToSection(priceRef)}
+
+                className="mt-[20px] text-[#6042F3] text-left">
                   Book A Call
-                </Link>
+                </button>
               </div>
             </div>
 

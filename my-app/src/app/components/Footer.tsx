@@ -68,7 +68,7 @@ export default function Footer({
           </button>
         </div>
         <div className="flex flex-col gap-[5px] ">
-          <h4 className="text-[30px]">blackweb3</h4>
+          <h4 className="text-[30px]">blackw3b</h4>
           <span className="lg:text-right text-left">socials</span>
 
           <div className="flex flex-row gap-[5px] lg:items-end lg:justify-end">

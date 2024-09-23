@@ -37,11 +37,11 @@ export default function HeaderComponent({
         <div className="flex flex-col gap-[5px] items-center text-center w-[80%] text-white">
           <p className="font-light  text-white ">Access Your</p>
 
-          <h1 className="font-medium header-h1"> Finacial Future</h1>
+          <h1 className="font-medium header-h1"> Financial Sovereignty</h1>
 
           <p className="font-light  text-white ">
             Your ultimate destination for expert-led education in blockchain,
-            crypto, AI, and web3 technologies,.
+            crypto, AI, and web3 technologies.
           </p>
 
           <div className="flex flex-row gap-[20px] mt-[20px]">
